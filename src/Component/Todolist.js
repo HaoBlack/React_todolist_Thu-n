@@ -92,7 +92,7 @@ class Todolist extends Component {
         } else {
           // console.log("123lk");
           for (let task of tasks) {
-            if (task.priority == filterPriority) {
+            if (task.priority === parseInt(filterPriority)) {
               console.log(task.priority);
               filterTasks = [...filterTasks, task];
             }
